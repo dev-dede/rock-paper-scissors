@@ -28,18 +28,14 @@ function playGame() {
   function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
       console.log(`You both choose ${humanChoice}. It's a tie!`);
-    } else if (humanChoice === "rock" && computerChoice === "paper") {
-      computerScore++;
-      console.log(`You lose! Paper beats Rock. You have ${humanScore} marks.`);
-    } else if (humanChoice === "paper" && computerChoice === "scissors") {
-      computerScore++;
-      console.log(
-        u`You lose! Scissors beats Paper. You have ${humanScore} marks.`
-      );
-    } else if (humanChoice === "scissors" && computerChoice === "rock") {
+    } else if (
+      (humanChoice === "rock" && computerChoice === "paper") ||
+      (humanChoice === "paper" && computerChoice === "scissors") ||
+      (humanChoice === "scissors" && computerChoice === "rock")
+    ) {
       computerScore++;
       console.log(
-        `You lose! Rock beats Scissors. You have ${humanScore} marks.`
+        `You lose! ${computerChoice} beats ${humanChoice}. You have ${humanScore} marks.`
       );
     } else {
       humanScore++;
