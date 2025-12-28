@@ -50,12 +50,15 @@ function playGame() {
     playRound(humanSelection, computerSelection);
   }
 
+  console.log("Final Score:");
+  console.log(`Human: ${humanScore}, Computer: ${computerScore}`);
+
   if (humanScore > computerScore) {
-    console.log(`You won! You got ${humanScore} marks`);
-  } else if (computerScore > humanScore){
-    console.log(`You lose! You got ${humanScore} marks`);
-  } else{
-    console.log("It's a tie!")
+    console.log(`You won!`);
+  } else if (computerScore > humanScore) {
+    console.log(`You lose!`);
+  } else {
+    console.log("It's a tie!");
   }
 }
 
