@@ -48,6 +48,16 @@ This project was built to practice:
 - **The DRY Principle:** Refactoring `if/else` statements to avoid repetitive code.
 - **Lexical Scope:** Managing variables (`humanScore`, `computerScore`) inside nested functions.
 - **Git Conventions:** Writing clear commit messages for features, fixes, and refactors.
+- Writing helper functions (`getComputerChoice`, `getHumanChoice`).
+- Understanding **Lexical Scope** (nesting variables inside functions).
+- Using `switch` statements and `if/else` logic.
+- Debugging using `console.log`.
+
+## 🔮 Future Improvements
+
+- Create a Graphical User Interface (GUI) with buttons instead of using `prompt()`.
+- Add a "Play Again" button after the game finishes.
+- Validate user input to handle typos (e.g., if the user types "Gun").
 
 ---
 
