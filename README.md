@@ -51,4 +51,4 @@ This project was built to practice:
 
 ---
 
-_Created by Dede as part of The Odin Project curriculum._
+_*Created by Dede as part of [The Odin Project](https://www.theodinproject.com/) curriculum.*_
