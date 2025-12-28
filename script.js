@@ -32,7 +32,7 @@ function playGame() {
     } else if (humanChoice === "paper" && computerChoice === "scissors") {
       computerScore++;
       console.log(
-        `You lose! Scissors beats Paper. You have ${humanScore} marks.`
+        u`You lose! Scissors beats Paper. You have ${humanScore} marks.`
       );
     } else if (humanChoice === "scissors" && computerChoice === "rock") {
       computerScore++;
@@ -51,12 +51,12 @@ function playGame() {
     let computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
   }
-}
 
-// if (humanScore > computerScore) {
-//   console.log(`You win! You got ${humanScore} marks`);
-// } else {
-//   console.log(`You lose! You got ${humanScore} marks`);
-// }
+  if (humanScore > computerScore) {
+    console.log(`You won! You got ${humanScore} marks`);
+  } else {
+    console.log(`You lose! You got ${humanScore} marks`);
+  }
+}
 
 playGame();
